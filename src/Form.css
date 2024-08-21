@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,700;1,200&display=swap");
+
+.homepage {
+  margin: 20px;
+  font-family: "Fraunces", serif;
+  position: relative; 
+  z-index: 1; 
+}
+
+.homepage-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.homepage-add-button {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+}
+
+.homepage-add-button:hover {
+  background-color: #45a049;
+}
+
+.homepage-table-container {
+  width: 100%;
+  height: 30vh; 
+  overflow-x: auto; 
+  overflow-y: auto; 
+  border: 1px solid black; 
+  position: relative; 
+}
+
+.homepage-table {
+  font-family: "Fraunces", serif;
+  font-size: 125%;
+  white-space: nowrap;
+  border: none;
+  border-collapse: separate;
+  border-spacing: 0;
+  table-layout: fixed;
+  width: 100%; 
+}
+
+.homepage-table thead th {
+  padding: 3px;
+  position: -webkit-sticky; 
+  position: sticky;
+  top: 0;
+  z-index: 2; 
+  background: white;
+  width: 20vw; 
+}
+
+.homepage-table tbody td,
+.homepage-table tbody th {
+  border: 1px solid black;
+  padding: 0.5rem 1rem;
+}
+
+.homepage-table tbody th {
+  font-weight: 100;
+  font-style: italic;
+  text-align: left;
+  position: -webkit-sticky; 
+  position: sticky;
+  left: 0;
+  background: white;
+  z-index: 1; 
+}
+
+/* .homepage-caption {
+  text-align: left;
+  padding: 0.25rem;
+  position: sticky;
+  left: 0;
+  background: white;
+} */
+
+.homepage-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10; 
+}
+
+.homepage-modal-content {
+  background: white;
+  border-radius: 5px;
+  width: 50%;
+  max-width: 500px;
+  max-height: 80vh; 
+  overflow-y: auto; 
+  position: relative; 
+  z-index: 11; 
+}
+
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.form-title {
+  margin: 0;
+}
+
+.form-close-button {
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.form-divider {
+  border: 0;
+  height: 1px;
+  background: #ccc;
+  margin: 0;
+}
+
+.form {
+  padding: 20px;
+  font-family: "Fraunces", serif;
+}
+
+.form-group {
+  margin-bottom: 1.5em;
+}
+
+.form-group h3 {
+  margin: 0 0 0.5em 0;
+  margin-top: 10px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.5em;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding-right: 10px;
+}
+
+.form-group input.error {
+  border-color: red;
+}
+
+.form-group input.focused {
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+.error-message {
+  color: red;
+  font-size: 0.875em;
+  margin-top: 0.5em;
+}
+
+.form-save-button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-save-button:hover {
+  background-color: #45a049;
+}
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-close-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #45a049;
+  cursor: pointer;
+}
+
+.form-close-button .fas {
+  color: #333;
+}
+
+.form-close-button:hover .fas {
+  color: #ff0000;
+}
+.homepage-table-container {
+  position: relative;
+  overflow: auto;
+}
+
+.homepage-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.homepage-table th, .homepage-table td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.homepage-table thead th {
+  position: -webkit-sticky; 
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 1; 
+}
+
+.homepage-table th:first-child {
+  position: -webkit-sticky; 
+  position: sticky;
+  left: 0;
+  background: white;
+  z-index: 2; 
+}
+
+.homepage-table td {
+  background: inherit;
+}
